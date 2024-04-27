@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
 
   # define the variales
   # provide the following details, this part is found on your test credentials on the developer account
-  $BusinessShortCode = '4336940';
+  $BusinessShortCode = '6858590';
   $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';  
   
   /*
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = 'https://morning-basin-87523.herokuapp.com/callback_url.php';  
+  $CallBackURL = 'https://vast-oasis-90620-071cbf58468f.herokuapp.com/callback_url.php';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
@@ -71,7 +71,7 @@ if(isset($_POST['submit'])){
     'TransactionType' => 'CustomerBuyGoodsOnline',
     'Amount' => $Amount,
     'PartyA' => $PartyA,
-    'PartyB' => $BusinessShortCode,
+    'PartyB' => 4336940,
     'PhoneNumber' => $PartyA,
     'CallBackURL' => $CallBackURL, 
     'AccountReference' => $AccountReference,
