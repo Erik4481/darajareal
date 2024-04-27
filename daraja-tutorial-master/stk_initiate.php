@@ -5,12 +5,12 @@ if(isset($_POST['submit'])){
   date_default_timezone_set('Africa/Nairobi');
 
   # access token
-  $consumerKey = 'nk16Y74eSbTaGQgc9WF8j6FigApqOMWr'; //Fill with your app Consumer Key
-  $consumerSecret = '40fD1vRXCq90XFaU'; // Fill with your app Secret
+  $consumerKey = 'doeyWhfTYGdA7zcK2mjcFgbUwlaK5kXwl26ZFeFwtwsLZR5Y'; //Fill with your app Consumer Key
+  $consumerSecret = 'WupLAjLuWBN132r5vvucqnMtluGBV2NmTszKIPzMNaFhXXtjN7ToTlf9D7SJKO6Y'; // Fill with your app Secret
 
   # define the variales
   # provide the following details, this part is found on your test credentials on the developer account
-  $BusinessShortCode = '174379';
+  $BusinessShortCode = '4336940';
   $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';  
   
   /*
@@ -68,12 +68,12 @@ if(isset($_POST['submit'])){
     'BusinessShortCode' => $BusinessShortCode,
     'Password' => $Password,
     'Timestamp' => $Timestamp,
-    'TransactionType' => 'CustomerPayBillOnline',
+    'TransactionType' => 'CustomerBuyGoodsOnline',
     'Amount' => $Amount,
     'PartyA' => $PartyA,
     'PartyB' => $BusinessShortCode,
     'PhoneNumber' => $PartyA,
-    'CallBackURL' => $CallBackURL,
+    'CallBackURL' => $CallBackURL, 
     'AccountReference' => $AccountReference,
     'TransactionDesc' => $TransactionDesc
   );
